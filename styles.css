@@ -1,0 +1,59 @@
+button {
+    background: white;
+    border: black solid 1px;
+    color: black;
+    border-radius: 10px;
+}
+
+button:hover {
+    background: rgb(229, 229, 229);
+}
+
+input {
+    border-radius: 10px;
+    border: black solid 1px;
+    margin-bottom: 5px;
+    padding: 0px 5px 0px 5px;
+}
+
+select {
+    border-radius: 10px;
+    border: black solid 1px;
+    width: 130px;
+}
+
+#numberInput {
+    width: 30px;
+}
+
+#userInput {
+    width: 130px;
+}
+
+.margin-bot {
+    margin-bottom: 5px;
+}
+
+.margin-top {
+    margin-top: 0px;
+}
+
+.small {
+    font-size: 10px;
+}
+
+.blue {
+    color: rgb(94, 156, 255);
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .input-group label {
+    margin-right: 10px;
+    white-space: nowrap;
+  }
+  

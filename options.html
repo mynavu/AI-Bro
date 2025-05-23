@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Summarizzler</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="input-group">
+      <label for="apiKey" class="margin-bot">API Key:</label>
+      <input id="apiKey" type="text" placeholder="Enter your gemini API key">
+    </div>
+    <div class="input-group">
+      <label for="modeInput" class="margin-bot">Mode:</label>
+      <select id="modeInput" >
+        <option value="alpha" selected >Gen Alpha</option>
+        <option value="easy">Easy-to-understand</option>
+        <option value="normal">Normal</option>
+        <option value="hood">Hood</option>
+        <option value="fruity">Fruity</option>
+      </select>
+    </div>
+    <p>You can get an api key from 
+        <a href="https://aistudio.google.com/app/apikey">Google AI Studio</a>
+    </p>
+    <button id="saveSettings">Save settings</button>
+    <p id="successMessage"></p>
+    <script src="options.js"></script>
+  </body>
+</html>
