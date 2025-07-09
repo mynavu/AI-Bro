@@ -1,24 +1,137 @@
+body {
+    background: white;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    text-wrap: wrap;
+    position: relative;
+}
+
+h1 {
+    font-size: 35px;
+    margin: 0;
+}
+
+.gradient {
+    background-image: linear-gradient(120deg, #5772ff 0%, #cea3ff 100%);
+}
+
+.gradientBg {
+    background-image: linear-gradient(120deg, #a4b2ff 0%, #cea3ff 100%);
+}
+
+.gradientText {
+  background-image: linear-gradient(120deg, #a4b2ff 0%, #cea3ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text; /* Required for WebKit browsers */
+  color: transparent;
+  -webkit-text-fill-color: transparent; /* Required for WebKit browsers */
+}
+
+.gradientButton {
+    background-image: linear-gradient(120deg, #5772ff 0%, #cea3ff 100%);
+    color: white;
+    border: 0;
+    font-weight: 600;
+    padding: 3px 10px;
+    text-shadow: 0px 0px 5px #004bad;
+}
+
+.gradientButton:hover {
+    background-image: linear-gradient(120deg, #cea3ff 0%, #5772ff 100%);
+    cursor: pointer;
+}
+
+
+.emojiAnimation {
+    width: 130px;
+    height: 100px;
+    position: absolute;
+    top: -30px;
+    right: 20px;
+}
+
+.emoji {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0px;
+}
+
+.hand {
+  height: 60px;
+  width: auto;
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  animation: floatUpDown 2s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+
 button {
     background: white;
     border: black solid 1px;
     color: black;
-    border-radius: 10px;
+    border-radius: 15px;
+}
+
+.blue {
+    color: #004bad;
+}
+
+.container {
+    background: #004bad;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px #004bad;
+    position: absolute;
+    opacity: 1;
+    z-index: 1;
+}
+
+video {
+    height: 490px;
+    width: auto;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px black;
+}
+
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.setting {
+    font-size: 17px;
+}
+
+.centerText {
+    text-align: center;
+}
+
+a {
+    color: white;
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 button:hover {
     background: rgb(229, 229, 229);
 }
 
-input {
-    border-radius: 10px;
-    border: black solid 1px;
-    margin-bottom: 5px;
-    padding: 0px 5px 0px 5px;
-}
-
 select {
     border-radius: 10px;
-    border: black solid 1px;
+    border: none;
     width: 130px;
 }
 
@@ -30,30 +143,60 @@ select {
     width: 130px;
 }
 
-.margin-bot {
+.margin-b {
     margin-bottom: 5px;
 }
 
+.margin-bot {
+    margin-bottom: 10px;
+}
+
+.margin-bottom {
+    margin-bottom: 15px;
+}
+
 .margin-top {
-    margin-top: 0px;
+    margin-top: 15px;
 }
 
 .small {
-    font-size: 10px;
+    font-size: 20px;
 }
 
-.blue {
-    color: rgb(94, 156, 255);
+.smaller {
+    font-size: 15px;
+}
+
+.thick {
+    font-weight: 900;
+}
+
+.pinkText {
+    color: #cea3ff;
+}
+
+
+input {
+    border-radius: 10px;
+    border: none;
+    padding: 0px 5px 0px 5px;
+    width: 100%;
 }
 
 .input-group {
     display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
+    align-items: center;    
+}
   
   .input-group label {
     margin-right: 10px;
     white-space: nowrap;
-  }
+}
   
+.rowContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ 

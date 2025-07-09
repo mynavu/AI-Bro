@@ -4,29 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Summarizzler</title>
+    <title>AI Bro Settings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-    <div class="input-group">
-      <label for="apiKey" class="margin-bot">API Key:</label>
-      <input id="apiKey" type="text" placeholder="Enter your gemini API key">
+  <body class="center gradient">
+    <div id="container" class="container">
+      <div class="emojiAnimation">
+        <img class="emoji" src="logo1.png">
+        <img class="hand" src="hand.png">
+      </div>
+      <h1>AI Bro <span class="material-symbols-outlined gradientText">flare</span></h1>
+      <p><b>Summarize</b> and <b>explain</b> in a way you actually <b>understand.</b></p>
+      <hr>
+      <h2>Tutorial <span class="material-symbols-outlined setting gradientText">lightbulb</span></h2>
+      <p>Watch this <a href="tutorial.html" target="_blank">video</a> for a quick tutorial.</p>
+      <hr>
+      <h2>Settings <span class="material-symbols-outlined setting gradientText">settings</span></h2>
+      <h4>Paste your API key here to use AI Bro</h4>
+      <div class="input-group margin-bot rowContainer">
+        <label for="apiKey"><span class="pinkText">*</span>API Key:</label>
+        <input id="apiKey" type="text" placeholder="Enter your gemini API key">
+      </div>
+      <p class="margin-bot">You can get an API key from 
+          <a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>
+      </p>
+      <h4>Set your default options</h4>
+      <div class="input-group margin-bot rowContainer">
+        <label for="typeInput" >Default Type:</label>
+        <select id="typeInput" >
+          <option selected value="summarize">Summarize</option>
+          <option value="explain">Explain</option>
+          <option value="answer">Answer</option>
+        </select>
+      </div>
+      <div class="input-group margin-bot rowContainer">
+        <label for="modeInput">Default Mode:</label>
+        <select id="modeInput" >
+          <option value="alpha" selected >Gen Z/Alpha</option>
+          <option value="easy">Easy-to-understand</option>
+          <option value="normal">Normal</option>
+          <option value="hood">Hood</option>
+          <option value="fruity">Fruity</option>
+        </select>
+      </div>
+      <button class="gradientButton margin-top" id="saveSettings">Save settings</button>
+      <p class="centerText"><span class="pinkText">*</span> For Bro to remain free, you must use your own API key.
+        <br> The <a href="tutorial.html" target="_blank">steps</a> are very simple and takes a couple of clicks.
+      </p>
+      <hr>
+      <h2>Notice <span class="material-symbols-outlined setting gradientText">warning</span></h2>
+      <p>The knowledge cutoff for this model (Gemini 2.0) is currently<br> August 2024. Do not rely on it for data on events after that <br>time. AI Bro's model will automatically be updated when a<br>newer speed-optimized model is released.
+      </p>
+      <h3 id="successMessage"></h3>
+
     </div>
-    <div class="input-group">
-      <label for="modeInput" class="margin-bot">Mode:</label>
-      <select id="modeInput" >
-        <option value="alpha" selected >Gen Alpha</option>
-        <option value="easy">Easy-to-understand</option>
-        <option value="normal">Normal</option>
-        <option value="hood">Hood</option>
-        <option value="fruity">Fruity</option>
-      </select>
-    </div>
-    <p>You can get an api key from 
-        <a href="https://aistudio.google.com/app/apikey">Google AI Studio</a>
-    </p>
-    <button id="saveSettings">Save settings</button>
-    <p id="successMessage"></p>
     <script src="options.js"></script>
   </body>
 </html>

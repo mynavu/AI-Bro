@@ -1,0 +1,203 @@
+body {
+    background: #004aad;
+    color: white;
+    padding: 0px 5px;
+}
+
+body * {
+    margin: 0;
+}
+
+/* The switch - the box around the slider ------------------------------ */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20.4px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(164, 164, 164);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15.6px;
+  width: 15.6px;
+  left: 2.4px;
+  bottom: 2.4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #cea3ff;
+  
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #cea3ff;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(15.6px);
+  -ms-transform: translateX(15.6px);
+  transform: translateX(15.6px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 20.4px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+button {
+    border-radius: 15px;
+}
+
+.gradient {
+    background-image: linear-gradient(120deg, #5772ff 0%, #cea3ff 100%);
+}
+
+.gradientText {
+  background-image: linear-gradient(120deg, #a4b2ff 0%, #cea3ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text; /* Required for WebKit browsers */
+  color: transparent;
+  -webkit-text-fill-color: transparent; /* Required for WebKit browsers */
+}
+
+.gradientButton {
+    background-image: linear-gradient(120deg, #5772ff 0%, #cea3ff 100%);
+    color: white;
+    border: 0;
+    font-weight: 600;
+    padding: 0px 10px;
+    text-shadow: 0px 0px 5px #004bad;
+}
+
+.gradientButton:hover {
+    background-image: linear-gradient(120deg, #cea3ff 0%, #5772ff 100%);
+    cursor: pointer;
+}
+
+.container {
+    background: #004bad;
+    padding: 50px;
+    opacity: 1;
+    border-radius: 30px;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+input {
+    border-radius: 10px;
+    border: none;
+    padding: 0px 5px 0px 5px;
+}
+
+select {
+    border-radius: 10px;
+    border: none;
+    width: 130px;
+}
+
+#numberInput {
+    width: 30px;
+}
+
+#userInput {
+    width: 130px;
+}
+
+.margin-b {
+    margin-bottom: 5px;
+}
+
+.margin-bot {
+    margin-bottom: 10px;
+}
+
+.margin-bottom {
+    margin-bottom: 15px;
+}
+
+.margin-top {
+    margin-top: 10px;
+}
+
+.mid {
+    font-size: 20px;
+}
+
+.small {
+    font-size: 10px;
+}
+
+.blue {
+    color: rgb(94, 156, 255);
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+  
+.input-group label {
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.setting {
+    color: #a4b2ff;
+}
+
+.setting:hover {
+    color: #cea3ff;
+}
+
+.rowContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#results {
+    line-height: 20px;
+    font-size: 14px;
+}
