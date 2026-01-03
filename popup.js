@@ -74,7 +74,7 @@ async function geminiChecking(text, apiKey, mode, type) {
         answer: answerMap
     }
 
-    const fetchLink = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`
+    const fetchLink = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${apiKey}`
     const context = await fetch(fetchLink,
         {
             method: "POST",

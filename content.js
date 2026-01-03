@@ -149,7 +149,7 @@ function showFloatingSummary(mode, text, type) {
     }
 
     try {
-      const fetchLink = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${geminiApiKey}`;
+      const fetchLink = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${geminiApiKey}`;
 
       const res = await fetch(fetchLink, {
         method: "POST",
